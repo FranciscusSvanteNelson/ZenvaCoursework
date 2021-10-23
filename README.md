@@ -2,5 +2,5 @@ This repository contains practice materials created by myself, following along o
 
 
 norsk:
-Denne mappen inneholder materialer fra kurs fra Zenva Academy
+Dette depotet inneholder materialer fra kurs fra Zenva Academy
 
