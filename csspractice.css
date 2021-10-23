@@ -1,0 +1,65 @@
+footer {
+    background-color: burlywood;
+}
+.main {
+    background-color: darkkhaki;
+}
+#divID {
+    background-color: lightslategrey;
+}
+
+* {
+    background-color: lightsteelblue;
+}
+
+#personalInfoDiv {
+    display: inline;
+}
+
+body {
+    height: 1700px;
+    width: 1000px;
+    padding: 3px;
+    margin: 3px;
+}
+
+#container {
+    position: relative;
+    background-color: rosybrown;
+    height: 500px;
+}
+
+#welcomeDiv {
+    background-color: thistle;
+    position: absolute;
+    height: 50%;
+    margin: 50px 50px 50px 50px;
+    padding: 10px 50px 10px 50px;
+    border: 5px dashed gainsboro
+}
+
+#middleDiv {
+    background-color: whitesmoke;
+    position:fixed;
+    top: 50px;
+    left: 50px;
+}
+
+#nameDiv {
+    background-color: wheat;
+    position: sticky;
+    top: 70px;
+    left: 70px;
+}
+
+#colourtextDiv {
+    background-color: sandybrown;
+    font-size: 30px;
+    font-weight: bold;
+    color:forestgreen;
+    text-decoration: underline wavy black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 500px;
+    width: 800px;
+    text-align:center;
+}
