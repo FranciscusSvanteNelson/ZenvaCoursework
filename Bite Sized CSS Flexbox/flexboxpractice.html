@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="Width=device-width, initial-scale=1">
+        <style>
+            * { margin: 0; padding: 0;}
+            header { background:wheat; display:flex; justify-content: space-between; margin-bottom: 10px;}
+                #logo { width: 100px; height: 50px;}
+                nav { background:wheat;}
+                    nav ul li {display: inline;}
+            
+            #hero { background:seashell; display:flex; justify-content: center; margin-bottom: 10px;}
+                .herographic {background:seashell;}
+                    .herographic img {width:100%;}
+                .heroheading {margin: 0 0 10px 10px; background:seashell;}
+                .herobutton {background:silver; width: 50%; text-align: center; border-radius: 10px; padding: 10px; margin: 0 auto;}
+            #article { display: flex; justify-content: center; margin-bottom: 10px;}
+                .articlecontainer { background:wheat; width: 300px; margin: 0 1em;}
+                .articlecontainer img { width:100%;}
+            footer {background:mistyrose; height: 50px; text-align:center;}
+                footer nav {background: mistyrose;}
+
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="https://via.placeholder.com/100x50">
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#">Menu Item</a></li>
+                    <li> <a href="#">Menu Item 2</a></li>
+                    <li> <a href="#">Menu Item 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="hero">
+            <div class="herographic"><img src="https://via.placeholder.com/300x300"> </div>
+            <div style="display:flex; flex-direction: column; justify-content:center;"><div class="heroheading"> <h1>HeroHeader1</h1></div>
+            <div class="herobutton"> HeroButton</div>
+            </div>
+        </section>
+        <section id="article">
+        <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200">
+            <h2> Article Title 1</h2>
+            <p> A preview of the Article's text. Read me!</p>
+        </div>   
+        <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200">
+            <h2> Article Title 2</h2>
+            <p> A preview of the Article's text. Read me!</p>
+        </div>    
+        <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200">
+            <h2> Article Title 2</h2>
+            <p> A preview of the Article's text. Read me!</p>
+        </div>    
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li> <a href="#">Menu Item</a></li>
+                    <li> <a href="#">Menu Item 2</a></li>
+                    <li> <a href="#">Menu Item 3</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

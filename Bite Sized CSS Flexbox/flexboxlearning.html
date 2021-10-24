@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Flexbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            #parent { background: lightblue; padding: 10px;
+            display: flex; flex-flow: row nowrap;}
+            .childitem { flex-basis: 300px;}
+            .child1 { background:lightskyblue; flex-shrink: 3;}
+            .child2 { background:lightslategrey; flex-grow: 1;}
+            .child3 { background:mistyrose; flex-shrink: 3;}
+        </style>
+    </head>
+    <body>
+
+        <div id="parent">
+            <div class="childitem child1">11</div>
+            <div class="childitem child2">22</div>
+            <div class="childitem child3">33</div>
+            <!-- <div class="childitem child4">44</div>
+            <div class="childitem child5">55</div>
+            <div class="childitem child6">66</div>
+            <div class="childitem child7">77</div>
+            <div class="childitem child8">88</div>
+            <div class="childitem child9">99</div> -->
+
+            <!-- CSS for disabled children follows:
+             .child4 { background: moccasin;}
+            .child5 { background: oldlace;}
+            .child6 { background:palegreen;}
+            .child7 { background:blueviolet ;}    
+            .child8 { background:burlywood}
+            .child9 { background: coral;} -->
+        </div>
+    </body>
+</html>
