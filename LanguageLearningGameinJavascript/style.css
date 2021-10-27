@@ -1,0 +1,62 @@
+body {
+    background-color: #754C8A;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wrapper div, #wrapper ul {
+    width: 50%;
+    max-width: 300px;
+}
+
+ul {
+    padding: 0px;
+
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    background: #FAA7D1;
+    text-shadow: -1px -1px 0 #C58BE3, 1px -1px 0 #C58BE3, -1px 1px 0 #C58BE3, 1px 1px 0 #C58BE3;
+    padding: 10px;
+}
+
+.alternative {
+    list-style-type: none;
+    margin-bottom: 4px;
+    padding: 10px;
+    color: #000;
+    background: #FAA7D1;
+    font-size: 30px;
+    text-shadow: -1px -1px 0 #C58BE3, 1px -1px 0 #C58BE3, -1px 1px 0 #C58BE3, 1px 1px 0 #C58BE3;
+}
+
+
+.alternative:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#result {
+    font-weight: bold;
+    color: #000;
+    background: #f45EAB;
+    text-shadow: -1px -1px 0 #C58BE3, 1px -1px 0 #C58BE3, -1px 1px 0 #C58BE3, 1px 1px 0 #C58BE3;
+}
+
+#score {
+    font-weight: bold;
+    color: #000;
+    background: #f45EAB;
+    text-shadow: -1px -1px 0 #C58BE3, 1px -1px 0 #C58BE3, -1px 1px 0 #C58BE3, 1px 1px 0 #C58BE3;
+}
