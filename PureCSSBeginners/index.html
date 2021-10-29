@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            height:100%
+        }
+        
+        body {
+            background-color:lightgray;
+            height:100%
+        }
+
+        #header {
+            background-color: cornflowerblue;
+            text-align: center;
+            border-bottom: solid 2px black;
+        }
+
+        #profile-dropdown {
+            position: relative;
+            top: 10px;
+
+        }
+
+        #profile-dropdown > * {
+            position: relative;
+            top: 10px;
+            width: 100px;
+        }
+
+        #main {
+            height: 90%;
+        }
+
+        h2 {
+            padding-left: 20px;
+        }
+        
+        #col-one {
+            max-height: 100%;
+            background-color: blanchedalmond;
+        }
+
+        #all-chats-container {
+            max-height: 85%;
+            direction: rtl;
+        }
+
+        #all-chats-container > ul {
+            direction: ltr;
+        }
+
+
+        #col-two {
+            max-height: 100%;
+            position: relative;
+            display: flex;
+            flex-flow: column;
+        }
+
+        #current-chat-container {
+            flex-grow: 1;
+            direction: rtl;
+            
+        }
+
+        #current-chat-container > ul {
+            direction: ltr;
+        }
+
+        .left-message {
+            margin-left:10px;
+        }
+
+        .right-message {
+            text-align:right;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        #chat-form {
+            padding:10px;
+        }
+
+        #col-three {
+            background-color: burlywood;
+        }
+
+        #tools-buttons {
+            margin: 20px, auto;
+            text-align: center;
+            width: 90%;
+
+        }
+
+        #table-container {
+            margin: 20px, auto;
+            text-align: center;
+            width: 90%;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        #table-container > * {
+            width: 100%;
+        }
+
+       
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="pure-g" id="header">
+        
+        <div class="pure-u-1 pure-u-sm-1-4" id="profile-dropdown"> 
+            <div class="pure-menu-item pure-menu-selected pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" class="pure-menu-link">Profile</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Account</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Settings</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="pure-u-1 pure-u-sm-1-2"> <h1>SvanteSend Messaging</h1> </div>
+        
+    </div>
+
+    <div class="pure-g" id="main">
+        <div class="pure-u-1 pure-u-sm-1-3 pure-u-xl-1-4" id="col-one">
+            <h2>All Chats</h2>
+            <div class="pure-u-11-12 pure-u-xl-1 pure-menu-scrollable" id="all-chats-container">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-heading"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">All Messages</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Friends Only</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Unreads Only</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Mentions Only</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Groups</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blocked Users</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Archived Messages</a></li>
+
+                    <br><br><br>
+
+                    <li class="pure-menu-heading"><a href="#" class="pure-menu-link">Your Groups</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Best Friends</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Acquaintances</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Coworkers/Colleagues</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Family</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">"The Ruggerlution"</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">"Henny's Paradise"</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">"Debra De-Lite and Friends"</a></li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="pure-u-1 pure-u-sm-2-3 pure-u-xl-1-2" id="col-two">
+            <h2>Current Chat(Headline)</h2>
+            <div class="pure-u-11-12 pure-u-xl-1 pure-menu pure-menu-scrollable" id="current-chat-container">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item left-message"><h3>Chatter 1</h3><p>Chat from others in your groups will appear on the left</p></li>
+                    <li class="pure-menu-item right-message"><h3>You</h3><p>And your text will appear on the right </p></li>
+                    <li class="pure-menu-item left-message"><h3>Chatter 2</h3><p>Multiple Chatters are distinguished by bold names</p></li>
+                    <li class="pure-menu-item left-message"><h3>Chatter 3</h3><p>to help us keep track of who is saying what </p></li>
+                </ul>
+            </div>
+            
+            <form class="pure-form pure-form-stacked" id="chat-form">
+                <fieldset>
+                    <input type="text" class="pure-input-1 pure-input-rounded" placeholder="Type your message here"/>
+                    <button type="submit" class="pure-button pure-button-primary">Send</button>
+                </fieldset>
+            </form>
+        
+        </div>
+        <div class="pure-u-1 pure-u-xl-1-4" id="col-three">
+            <h2>Mini Tool Nav</h2>
+            <div class="pure-button-group" role="group" aria-label="..." id="tools-buttons">
+                <button class="pure-button"> Calendar </button>
+                <button class="pure-button"> Friends List </button>
+                <button class="pure-button"> Settings </button>
+                <button class="pure-button"> Report an Issue </button>
+            </div>
+
+            <div id="table-container">
+                <table class="pure-table pure-table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Friend One</th>
+                            <th>Friend Two</th>
+                            <th>Friend Three</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Friend 1 Status</td>
+                            <td>Friend 2 Status</td>
+                            <td>Friend 3 Status</td>
+                        </tr>
+                        <tr>
+                            <td>Online/Offline</td>
+                            <td>Online/Offline</td>
+                            <td>Online/Offline</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+</body>    
+</html>
