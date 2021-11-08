@@ -2,9 +2,72 @@
 <html>
 <head>
 
+<style>
+    body {
+        background-color: bisque;
+        padding: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 10px;
+        width: 200px;
+        height: 400px;
+        border: thick solid cornflowerblue;
+        background-color: azure;
+        
+    }
+
+    .textInput {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #petSelection {
+        margin-top: 10px;
+        display: none;
+    }
+
+    #saveButton {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        background-color: cornflowerblue;
+        color:antiquewhite;
+    }
+
+
+
+
+
+</style>
+
+
+
 </head> 
 <body>
 
+    <div class="container">
+        <form id="saveForm">
+            Name: <br> <input class="textInput" type="text"> <br>
+            Address: <br> <input class="textInput" type="text"> <br>
+            Age: <br> <input class="textInput" type="text"> <br>
+            Have Pets?:<br> <input id="petCheckbox" type="checkbox"> <br>
+            <div id="petSelection">Type of Pet:<br> <select> 
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Velociraptor">Velociraptor</option>
+                <option value="Other">Other</option>
+            </select> <br> </div>
+            <input id="saveButton" type="submit" value="Save">
+        </form>
+    </div>
     
 
 
