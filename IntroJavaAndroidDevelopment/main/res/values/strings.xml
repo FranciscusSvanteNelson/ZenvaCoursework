@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="colorInputHint">Enter your favorite color.</string>
+    <string name="submitButtonText">Submit</string>
+</resources>
